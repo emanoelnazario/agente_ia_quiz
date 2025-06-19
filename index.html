@@ -1,25 +1,24 @@
-<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-<df-messenger
-  location="us-central1"
-  project-id="quiz-463214"
-  agent-id="b2b2925d-0af2-46a8-81aa-b9ec2c442e7f"
-  language-code="pt-br"
-  max-query-length="-1">
-  <df-messenger-chat-bubble
-    chat-title="AgenteQuiz">
-  </df-messenger-chat-bubble>
-</df-messenger>
-<style>
-  df-messenger {
-    z-index: 999;
-    position: fixed;
-    --df-messenger-font-color: #000;
-    --df-messenger-font-family: Google Sans;
-    --df-messenger-chat-background: #f3f6fc;
-    --df-messenger-message-user-background: #d3e3fd;
-    --df-messenger-message-bot-background: #fff;
-    bottom: 16px;
-    right: 16px;
-  }
-</style>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste Final do Agente</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Assistente de IA</h1>
+    <p>Clique no chat e faça uma pergunta.</p>
+
+    <!-- Script de inicialização do Dialogflow Messenger -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    
+    <!-- Componente do Chat com o Endereço Explícito -->
+    <df-messenger
+      project-id="quiz-463214"
+      agent-id="b2b2925d-0af2-46a8-81aa-b9ec2c442e7f"
+      language-code="pt-br"
+      location="us-central1"
+      api-uri="us-central1-dialogflow.googleapis.com">
+    </df-messenger>
+
+</body>
+</html>
